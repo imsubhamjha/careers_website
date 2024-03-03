@@ -19,17 +19,17 @@
 
     <body>
         {% include 'nav.html' %}
-        <img class="img-fluid" id="banner" src="/Static/grt.avif" >
+        <img class="img-fluid" id="banner" src="/static/grt.avif" alt="motivate">
         <div class="container">
             <h1 class="text-center mt-3 mb-3">CareerClimbHub</h1>
-            <div class="row">
-                <div class="col-6">
+            <div class="row" style="margin-bottom: 16px;">
+                <div class="col-md-6">
             <p class="lead">
                 At CareerClimbHub, we're dedicated to helping individuals navigate their professional journeys with confidence and clarity. Whether you're a recent graduate seeking your first job or a seasoned professional looking to make a career change, CareerClimbHub is your trusted partner in achieving your career aspirations. Our platform offers a comprehensive range of resources, including job listings, career advice articles, skill development courses, and networking opportunities, all designed to empower you to reach new heights in your career. Join our vibrant community of motivated individuals today and embark on your path to success with CareerClimbHub!
             </p>
                 </div>
-                <div class="col-6">
-                <img src="/Static/people2.avif" style="height: 500px">
+                <div class="d-none d-md-block col-6">
+                <img src="/static/people2.avif" style="height: 400px; border-radius: 5px;">
                 </div>
             </div>
             <h2 class="text-center mt-3 mb-3">Open Positions</h2>
@@ -39,7 +39,7 @@
                 {% endfor %}
             </div>
             <div class="text-center">
-                <button class="btn btn-primary btn-lg">Contact Us</button>
+                <a class="btn btn-primary btn-lg" href="mailto:mailtostark.arya@gmail.com?subject=Question%20about%20job%20oppenings&body=My%20name%20%3A%20%3Cyour%20name%3E%0D%0A%0D%0AMy%20question%20%3A%20%3Cask%20your%20question%3E%0D%0A%0D%0A">Contact Us</a>
             </div>
         </div>
         {% include 'footer.html' %}
