@@ -12,19 +12,26 @@
                 height: 360px;
                 width: 100%;
                 object-fit: cover;
+                margin-bottom: 20px;
             }
         </style>
     </head>
 
     <body>
+        {% include 'nav.html' %}
+        <img class="img-fluid" id="banner" src="/Static/grt.avif" >
         <div class="container">
             <h1 class="text-center mt-3 mb-3">CareerClimbHub</h1>
-            
-            <img class="img-fluid" id="banner" src="//127.0.0.1:5000/static/motivate.jpeg" >
-            <h2 class="text-center mt-4 and mb-3">About CareerClimbHub</h2>
+            <div class="row">
+                <div class="col-6">
             <p class="lead">
                 At CareerClimbHub, we're dedicated to helping individuals navigate their professional journeys with confidence and clarity. Whether you're a recent graduate seeking your first job or a seasoned professional looking to make a career change, CareerClimbHub is your trusted partner in achieving your career aspirations. Our platform offers a comprehensive range of resources, including job listings, career advice articles, skill development courses, and networking opportunities, all designed to empower you to reach new heights in your career. Join our vibrant community of motivated individuals today and embark on your path to success with CareerClimbHub!
             </p>
+                </div>
+                <div class="col-6">
+                <img src="/Static/people2.avif" style="height: 500px">
+                </div>
+            </div>
             <h2 class="text-center mt-3 mb-3">Open Positions</h2>
             <div>
                 {% for job in jobs %}
@@ -33,10 +40,9 @@
             </div>
             <div class="text-center">
                 <button class="btn btn-primary btn-lg">Contact Us</button>
-                <p class="mt-4">Copyright 2024, Subham</p>
             </div>
         </div>
-       
+        {% include 'footer.html' %}
     </body>
 
 </html>
